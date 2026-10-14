@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "./styles/tokens.css";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --color-primary: #551760;
+  --color-primary-hover: #481352;
+  --color-primary-dark: #44124d;
+
+  --color-footer-bg: #551760;
+  --color-copyright-bg: #44124d;
+
+  --color-price-gold: #f39c12;
+  --color-price-gold-hover: #e67e22;
+
+  --color-badge-sale: #5cb85c;
+  --color-nav-active: #d19c97;
+
+  --color-bg-light-1: #f3f7f8;
+  --color-bg-light-2: #f3f2ee;
+  --color-bg-divider: #dcdcdc;
+  --color-bg-story: #f7f7f7;
+  --color-bg-body: #f7f7f7;
+
+  --color-border-light: #e9ecef;
+  --color-border-subtle: #dcdcdc;
+}
+
+/* Base resets */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: #ffffff;
+  color: #1f2937;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Custom utilities & Container */
+.container-custom {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

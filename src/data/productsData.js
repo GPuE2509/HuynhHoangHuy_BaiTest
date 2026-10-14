@@ -1,0 +1,131 @@
+import ySpanImg from '../assets/images/y-span.png'
+import ap24Img from '../assets/images/ap24.png'
+
+/**
+ * Mock data danh sách sản phẩm cửa hàng Nu Skin
+ * Gồm đúng 6 thẻ sản phẩm theo yêu cầu, chia 2 trang (mỗi trang 3 thẻ)
+ */
+
+export const productsData = [
+  {
+    id: 1,
+    name: "Pure Pineapple",
+    fullName: "ageLOC® Y-Span® Dietary Supplement",
+    category: "AGELOC",
+    price: 14.00,
+    originalPrice: 35.00,
+    isSale: false,
+    isLoyalCustomer: true,
+    image: ySpanImg,
+    description: "ageLOC Y-Span là sản phẩm bổ sung chống lão hóa tiên tiến nhất của Nu Skin, nhắm vào khả năng phục hồi trẻ hóa tự nhiên của cơ thể.",
+    specifications: {
+      origin: "Hoa Kỳ",
+      volume: "120 viên / hộp",
+      brand: "Pharmanex / Nu Skin",
+      usage: "Uống 2 viên/lần, 2 lần mỗi ngày cùng bữa ăn",
+    },
+  },
+  {
+    id: 2,
+    name: "Pure Pineapple",
+    fullName: "AP 24® Whitening Fluoride Toothpaste",
+    category: "AGELOC",
+    price: 14.00,
+    originalPrice: 35.00,
+    isSale: true,
+    isLoyalCustomer: true,
+    image: ap24Img,
+    description: "Kem đánh răng làm sáng răng AP 24 không chứa peroxide gây hại, giúp ngừa mảng bám và mang lại hơi thở thơm mát.",
+    specifications: {
+      origin: "Hoa Kỳ",
+      volume: "110g",
+      brand: "Nu Skin",
+      usage: "Đánh răng sau mỗi bữa ăn hoặc ít nhất 2 lần/ngày",
+    },
+  },
+  {
+    id: 3,
+    name: "Pure Pineapple",
+    fullName: "ageLOC® Y-Span® Duo Pack",
+    category: "AGELOC",
+    price: 14.00,
+    originalPrice: 35.00,
+    isSale: true,
+    isLoyalCustomer: true,
+    image: ySpanImg,
+    description: "Công thức độc quyền chiết xuất tự nhiên kết hợp công nghệ khoa học ageLOC duy trì sức khỏe tế bào.",
+    specifications: {
+      origin: "Hoa Kỳ",
+      volume: "120 viên x 2 lọ",
+      brand: "Pharmanex / Nu Skin",
+      usage: "Dành cho người trưởng thành muốn bảo vệ sức khỏe toàn diện",
+    },
+  },
+  {
+    id: 4,
+    name: "Pure Pineapple",
+    fullName: "AP 24® Anti-Plaque Toothpaste Duo",
+    category: "AGELOC",
+    price: 14.00,
+    originalPrice: 35.00,
+    isSale: true,
+    isLoyalCustomer: true,
+    image: ap24Img,
+    description: "Sản phẩm chăm sóc răng miệng cao cấp giúp bảo vệ men răng và giữ hơi thở thơm tho suốt cả ngày.",
+    specifications: {
+      origin: "Hoa Kỳ",
+      volume: "110g x 2 tuýp",
+      brand: "Nu Skin",
+      usage: "Sử dụng hàng ngày sau bữa ăn",
+    },
+  },
+  {
+    id: 5,
+    name: "Pure Pineapple",
+    fullName: "ageLOC® Y-Span® Travel Pack",
+    category: "AGELOC",
+    price: 14.00,
+    originalPrice: 35.00,
+    isSale: true,
+    isLoyalCustomer: true,
+    image: ySpanImg,
+    description: "Phiên bản du lịch tiện lợi chứa các dưỡng chất bảo vệ sức khỏe tế bào tối ưu.",
+    specifications: {
+      origin: "Hoa Kỳ",
+      volume: "60 viên",
+      brand: "Pharmanex / Nu Skin",
+      usage: "Uống 2 viên/ngày cùng bữa ăn",
+    },
+  },
+  {
+    id: 6,
+    name: "Pure Pineapple",
+    fullName: "AP 24® Whitening Special Edition",
+    category: "AGELOC",
+    price: 14.00,
+    originalPrice: 35.00,
+    isSale: false,
+    isLoyalCustomer: true,
+    image: ap24Img,
+    description: "Phiên bản đặc biệt hỗ trợ làm trắng sáng nụ cười tự nhiên không mài mòn răng.",
+    specifications: {
+      origin: "Hoa Kỳ",
+      volume: "110g",
+      brand: "Nu Skin",
+      usage: "Đánh răng 2 lần mỗi ngày",
+    },
+  },
+]
+
+export const categoriesData = [
+  { id: "dresses", label: "Dresses", hasChildren: true },
+  { id: "shirts", label: "Shirts", hasChildren: false },
+  { id: "jeans", label: "Jeans", hasChildren: false },
+  { id: "swimwear", label: "Swimwear", hasChildren: false },
+  { id: "sleepwear", label: "Sleepwear", hasChildren: false },
+  { id: "sportswear", label: "Sportswear", hasChildren: false },
+  { id: "jumpsuits", label: "Jumpsuits", hasChildren: false },
+  { id: "blazers", label: "Blazers", hasChildren: false },
+  { id: "jackets", label: "Jackets", hasChildren: false },
+  { id: "shoes", label: "Shoes", hasChildren: false },
+]
